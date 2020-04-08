@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2020-04-06T19:28:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/first-machine-learning/</loc>
+    <lastmod>2020-04-06T19:28:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/machine-learning/</loc>
+    <lastmod>2020-04-06T19:28:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2020-04-06T19:28:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/resources/</loc>
+    <lastmod>2020-04-06T19:28:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-04-06T19:28:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/tutorial/</loc>
+    <lastmod>2020-04-06T19:28:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/contact/</loc>
+    <lastmod>2019-12-17T23:58:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2019-12-17T23:58:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/series/</loc>
+  </url>
+  
+</urlset>
