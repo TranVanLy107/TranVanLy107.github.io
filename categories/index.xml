@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on Trần Văn Lý</title>
-    <link>http://example.org/categories/</link>
+    <link>https://tranvanly107.github.io/categories/</link>
     <description>Recent content in Categories on Trần Văn Lý</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 06 Apr 2020 19:28:29 +0700</lastBuildDate>
     
-        <atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://tranvanly107.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>resources</title>
-        <link>http://example.org/categories/resources/</link>
+        <link>https://tranvanly107.github.io/categories/resources/</link>
         <pubDate>Mon, 06 Apr 2020 19:28:29 +0700</pubDate>
         <author>tranvanly107@gmail.com (Tran Van Ly)</author>
         
-        <guid>http://example.org/categories/resources/</guid>
+        <guid>https://tranvanly107.github.io/categories/resources/</guid>
         <description></description>
         
         <dc:creator>Tran Van Ly</dc:creator>

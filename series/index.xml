@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on Trần Văn Lý</title>
-    <link>http://example.org/series/</link>
+    <link>https://tranvanly107.github.io/series/</link>
     <description>Recent content in Series on Trần Văn Lý</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
@@ -15,7 +15,7 @@
     <webMaster>tranvanly107@gmail.com (Tran Van Ly)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     
-        <atom:link href="http://example.org/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://tranvanly107.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     

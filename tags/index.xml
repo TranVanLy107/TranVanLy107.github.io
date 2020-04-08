@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Trần Văn Lý</title>
-    <link>http://example.org/tags/</link>
+    <link>https://tranvanly107.github.io/tags/</link>
     <description>Recent content in Tags on Trần Văn Lý</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 06 Apr 2020 19:28:29 +0700</lastBuildDate>
     
-        <atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://tranvanly107.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>machine learning</title>
-        <link>http://example.org/tags/machine-learning/</link>
+        <link>https://tranvanly107.github.io/tags/machine-learning/</link>
         <pubDate>Mon, 06 Apr 2020 19:28:29 +0700</pubDate>
         <author>tranvanly107@gmail.com (Tran Van Ly)</author>
         
-        <guid>http://example.org/tags/machine-learning/</guid>
+        <guid>https://tranvanly107.github.io/tags/machine-learning/</guid>
         <description></description>
         
         <dc:creator>Tran Van Ly</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>tutorial</title>
-        <link>http://example.org/tags/tutorial/</link>
+        <link>https://tranvanly107.github.io/tags/tutorial/</link>
         <pubDate>Mon, 06 Apr 2020 19:28:29 +0700</pubDate>
         <author>tranvanly107@gmail.com (Tran Van Ly)</author>
         
-        <guid>http://example.org/tags/tutorial/</guid>
+        <guid>https://tranvanly107.github.io/tags/tutorial/</guid>
         <description></description>
         
         <dc:creator>Tran Van Ly</dc:creator>
