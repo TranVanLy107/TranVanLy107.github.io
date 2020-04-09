@@ -14,7 +14,7 @@
     <managingEditor>tranvanly107@gmail.com (Tran Van Ly)</managingEditor>
     <webMaster>tranvanly107@gmail.com (Tran Van Ly)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 06 Apr 2020 19:28:29 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://tranvanly107.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,9 +25,9 @@
       <item>
         <title>Giải bài toán Machine Learning đầu tiên </title>
         <link>https://tranvanly107.github.io/posts/first-machine-learning/</link>
-        <pubDate>Mon, 06 Apr 2020 19:28:29 +0700</pubDate>
+        <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
         <author>tranvanly107@gmail.com (Tran Van Ly)</author>
-        <atom:modified>Mon, 06 Apr 2020 19:28:29 +0700</atom:modified>
+        <atom:modified>Fri, 10 Apr 2020 00:00:00 +0000</atom:modified>
         <guid>https://tranvanly107.github.io/posts/first-machine-learning/</guid>
         <description>1. Kiến thức cần có Trước khi bắt đầu với bài viết này, vui lòng chắc chắn rằng bạn có kiến thức về Python. Các thư viện cần thiết như:
  Pandas Numpy Sklearn  2. Các bước để làm một bài toán ML Hầu hết toàn bộ bài toán về Machine Learning đều trải qua các bước cơ bản sau: ( Mình sẽ không nói sâu về từng bước, các bạn cần tìm hiểu thêm nhé)</description>
