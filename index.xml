@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Trần Văn Lý</title>
+    <title>Machine Learning Blog</title>
     <link>https://tranvanly107.github.io/</link>
-    <description>Recent content on Trần Văn Lý</description>
+    <description>Recent content on Machine Learning Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <managingEditor>tranvanly107@gmail.com (Tran Van Ly)</managingEditor>
