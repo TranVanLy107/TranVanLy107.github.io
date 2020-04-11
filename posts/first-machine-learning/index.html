@@ -1563,7 +1563,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Apr 10, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;6&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;11&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;lytran</span>
   
@@ -1590,7 +1590,8 @@
 <ul>
 <li>Pandas</li>
 <li>Numpy</li>
-<li>Sklearn</li>
+<li>Sklearn<br />
+Các bạn có thể dùng <strong>google colab</strong> hoặc <strong>jupyter</strong> để code nhé.</li>
 </ul>
 <h3 id="2-các-bước-để-làm-một-bài-toán-ml">2. Các bước để làm một bài toán ML</h3>
 <p>Hầu hết toàn bộ bài toán về Machine Learning đều trải qua các bước cơ bản sau: ( Mình sẽ không nói sâu về từng bước, các bạn cần tìm hiểu thêm nhé)</p>
@@ -1748,14 +1749,14 @@ Các bạn có thể tìm hiểu dữ liệu <a href="http://https://en.wikipedi
 <em>Chúng ta đi vào chi tiết:</em></li>
 </ol>
 <h6 id="331-chiều-của-dữ-liệu">3.3.1. Chiều của dữ liệu</h6>
-<p>Chiều của dữ liệu cho chúng ta biết là có bao nhiều hàng và bao nhiêu cột của toàn bộ dữ liệu.<br />
-<code>print(dataset.shape)</code> <br />
-Chúng ta sẽ thấy là 150 hàng và 5 cột. Có nghĩa là có 50 điểm dữ liệu và 4 features, 1 class chín là nhãn mà model cần dự đoán.<br />
+<p>Chiều của dữ liệu cho chúng ta biết là có bao nhiều hàng và bao nhiêu cột của toàn bộ dữ liệu.</p>
+<pre><code>print(dataset.shape)
+</code></pre><p>Chúng ta sẽ thấy là 150 hàng và 5 cột. Có nghĩa là có 50 điểm dữ liệu và 4 features, 1 class chín là nhãn mà model cần dự đoán.<br />
 <strong>(150,5)</strong></p>
 <h6 id="332-tổng-quan-dữ-liệu">3.3.2. Tổng quan dữ liệu</h6>
-<p>Bây giờ chúng ta sẽ xem rõ hơn về dữ liệu nhé. Để xem chúng ta chỉ cần dùng head như sau:<br />
-<code>print(dataset.head(20))</code><br />
-Chúng sẽ hiển thị 20 hàng đầu tiên của toàn bộ dữ liệu.</p>
+<p>Bây giờ chúng ta sẽ xem rõ hơn về dữ liệu nhé. Để xem chúng ta chỉ cần dùng head như sau:</p>
+<pre><code>print(dataset.head(20))
+</code></pre><p>Chúng sẽ hiển thị 20 hàng đầu tiên của toàn bộ dữ liệu.</p>
 <table>
 <thead>
 <tr>
@@ -1933,8 +1934,9 @@ Chúng sẽ hiển thị 20 hàng đầu tiên của toàn bộ dữ liệu.</p>
 <p>Các feature của dữ liệu bao gồm: chiều dài đài hoa (sepal-length), chiều rộng đài hoa(sepal-width ), chiều dài cánh hoa (petal-length), chiều rộng cánh hoa(petal-width ).Và có 3 classes mà chúng ta cần dự đoán đó là: Iris-setosa, Iris-versicolor, Iris-virginica. Tất nhiên mỗi loài hoa sẽ có các feature khác nhau để mô hình nó phân biệt và đưa ra dự đoán chính xác.</p>
 <h6 id="333-thống-kê-các-thuộc-tính-của-dữ-liệu">3.3.3. Thống kê các thuộc tính của dữ liệu</h6>
 <p>Bây giờ chúng ta sẽ xem chi tiết hơn về các features: Bao gồm count(số lượng), mean(chiều dài, chiều rộng trung bình), min và max. <br />
-<strong>Cụ thể như sau</strong>:<br />
-<code>print(dataset.describe())</code></p>
+<strong>Cụ thể như sau</strong>:</p>
+<pre><code>print(dataset.describe())
+</code></pre><p>Và kết quả là:</p>
 <table>
 <thead>
 <tr>
@@ -2006,9 +2008,9 @@ Chúng sẽ hiển thị 20 hàng đầu tiên của toàn bộ dữ liệu.</p>
 </table>
 <p>Như chung ta thấy ở trên độ dài và rộng của từng feature thuộc cùng đơn vị (cm) và cùng nằm trong khoảng từ 0-8 cm.</p>
 <h6 id="334-phân-bố-dữ-liệu">3.3.4. Phân bố dữ liệu</h6>
-<p>Bây giờ chúng ta xem số lượng của từng loài hoa ( từng class) bằng cách:<br />
-<code>print(dataset.groupby('class').size())</code><br />
-Và kết quả sẽ là:</p>
+<p>Bây giờ chúng ta xem số lượng của từng loài hoa ( từng class) bằng cách:</p>
+<pre><code>print(dataset.groupby('class').size()
+</code></pre><p>Và kết quả sẽ là:</p>
 <blockquote>
 <p>class<br />
 Iris-setosa        50<br />
@@ -2054,7 +2056,241 @@ Iris-virginica     50</p>
 </div><h5 id="34-trực-quan-dữ-liệu">3.4. Trực quan dữ liệu</h5>
 <p>Chúng ta đã biết được cơ bản về dữ liệu, bây giờ là lúc chúng ta trực quan hóa bằng biểu đồ.<br />
 Bước này giúp chúng ta hiểu rõ hơn phân bố chi tiết từng loài hoa(class) bằng cách nhìn vào các biểu đồ sau:</p>
-<p>sẽ có phần tiếp theo nhé&hellip;ok</p>
+<h6 id="341-univariate-plots">3.4.1. Univariate Plots</h6>
+<p>Biểu đồ này giúp chúng ta hiểu được từng feature.</p>
+<pre><code>dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
+</code></pre><p>Kết quả là:</p>
+<p><img src="file:///C:/Users/LYTRAN/Desktop/blog/3.4.1.2.png" alt="" /></p>
+<p>Chúng ta cũng có thể tạo ra các biểu đồ histogram với dữ liệu đầu vào:</p>
+<pre><code># histograms
+dataset.hist()
+pyplot.show()
+</code></pre><p>Kết quả là:</p>
+<p><img src="" alt="" /></p>
+<h6 id="342-multivariate-plots">3.4.2. Multivariate Plots</h6>
+<p>Bây giờ chúng ta có thể thấy sự liên quan giữa các feature. Chúng ta sử dụng scatterplots trên tất cả dữ liệu để thấy được quan hệ của các feture trên toàn bộ dữ liệu:</p>
+<pre><code># scatter plot matrix
+scatter_matrix(dataset)
+pyplot.show()
+</code></pre><p>Chúng ta thấy được sự tương quan giữa chúng thông qua biểu đồ sau:</p>
+<p><img src="" alt="" /></p>
+<p><strong>Code đầy đủ cho các bước trên như sau:</strong></p>
+<pre><code># visualize the data
+from pandas import read_csv
+from pandas.plotting import scatter_matrix
+from matplotlib import pyplot
+# Load dataset
+url = &quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+dataset = read_csv(url, names=names)
+# box and whisker plots
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
+# histograms
+dataset.hist()
+pyplot.show()
+# scatter plot matrix
+scatter_matrix(dataset)
+pyplot.show()
+</code></pre><h5 id="35-đánh-giá-thuật-toán">3.5. Đánh giá thuật toán</h5>
+<p>Bây giờ là lúc chúng ta sẽ thử chọn một vài model để xem độ chính xác của từng model trên tập test của chúng ta nhé.<br />
+Các bước thực hiện như sau:</p>
+<ol>
+<li>Tách một phần dữ liệu để đánh giá model ( validation dataset)</li>
+<li>Thiết lập validation dataset để sử dụng 10-fold cross validation</li>
+<li>Chạy và dự đoán kết quả trên từng model</li>
+<li>Chọn ra model có kết quả tốt nhất để sử dụng cuối cùng<br />
+ok, bây giờ sẽ vào chi tiết nhé:</li>
+</ol>
+<h6 id="351-tách-một-phần-dữ-liệu-validation-dataset">3.5.1. Tách một phần dữ liệu (validation Dataset)</h6>
+<p>Chúng ta sẽ chia dữ liệu của chúng ta ra thành 2 phần: 80% dữ liệu dùng để huấn luyện model ( training data), 20% còn lại là dùng để đánh giá model(validation data)</p>
+<pre><code># Split-out validation dataset
+array = dataset.values
+X = array[:,0:4]
+y = array[:,4]
+X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1)
+</code></pre><p>Bây giờ chúng ta đã chuẩn bị được dữ liệu đầy đủ cho việc training và testing rồi.</p>
+<h6 id="352-cross-validation">3.5.2. Cross validation</h6>
+<p>Chúng ta sẽ tạo ra 10 fold cross validation để estimate model.<br />
+Cụ thể là chúng ta chia dữ liệu train ra làm 10 phần bằng nhau, lấy 9 phần cho việc train và phần còn lại là để test trong lúc train.</p>
+<h6 id="353-chạy-model">3.5.3. Chạy model</h6>
+<p>Chúng ta bây giờ sẽ không thể biết được model nào sẽ tốt nhất.<br />
+Sau đây là những model mình dùng để chạy và dự đoán độ chính xác</p>
+<ol>
+<li>Logistic Regression (LR)</li>
+<li>Linear Discriminant Analysis (LDA)</li>
+<li>K-Nearest Neighbors (KNN).</li>
+<li>Classification and Regression Trees (CART).</li>
+<li>Gaussian Naive Bayes (NB).</li>
+<li>Support Vector Machines (SVM).<br />
+Cụ thể từng model thì mình sẽ cập nhật sau nếu có thời gian nhé.<br />
+Nào bây giờ chúng ta sẽ code và chạy nhé:</li>
+</ol>
+<pre><code># Spot Check Algorithms
+models = []
+models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+models.append(('LDA', LinearDiscriminantAnalysis()))
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('CART', DecisionTreeClassifier()))
+models.append(('NB', GaussianNB()))
+models.append(('SVM', SVC(gamma='auto')))
+# evaluate each model in turn
+results = []
+names = []
+for name, model in models:
+	kfold = StratifiedKFold(n_splits=10, random_state=1, shuffle=True)
+	cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring='accuracy')
+	results.append(cv_results)
+	names.append(name)
+	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
+</code></pre><h6 id="354-chọn-model-có-kết-quả-tốt-nhất">3.5.4. Chọn model có kết quả tốt nhất</h6>
+<p>Bây giờ chúng ta đã chạy được 6 model và mỗi model sẽ cho ra độ chính xác khác nhau. Giờ là lúc chúng ta so sánh từng kết quả và chọn ra model có độ chính xác tốt nhất.<br />
+Chạy xong đoạn code trên thì chúng ta nhận được kết quả sau:</p>
+<blockquote>
+<p>LR: 0.960897 (0.052113)<br />
+LDA: 0.973974 (0.040110)<br />
+KNN: 0.957191 (0.043263)<br />
+CART: 0.957191 (0.043263)<br />
+NB: 0.948858 (0.056322)<br />
+SVM: 0.983974 (0.032083)</p>
+</blockquote>
+<p>Như chúng ta thấy độ chính xác của model Support Vector Machine(SVM)<br />
+đạt kết quả với độ chính xác lên đến hơn 98% và là kết quả tốt nhất.</p>
+<p>Toàn bộ code cho bài viết như sau:</p>
+<pre><code># compare algorithms
+from pandas import read_csv
+from matplotlib import pyplot
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import StratifiedKFold
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+# Load dataset
+url = &quot;https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv&quot;
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+dataset = read_csv(url, names=names)
+# Split-out validation dataset
+array = dataset.values
+X = array[:,0:4]
+y = array[:,4]
+X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1, shuffle=True)
+# Spot Check Algorithms
+models = []
+models.append(('LR', LogisticRegression(solver='liblinear', multi_class='ovr')))
+models.append(('LDA', LinearDiscriminantAnalysis()))
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('CART', DecisionTreeClassifier()))
+models.append(('NB', GaussianNB()))
+models.append(('SVM', SVC(gamma='auto')))
+# evaluate each model in turn
+results = []
+names = []
+for name, model in models:
+	kfold = StratifiedKFold(n_splits=10, random_state=1)
+	cv_results = cross_val_score(model, X_train, Y_train, cv=kfold, scoring='accuracy')
+	results.append(cv_results)
+	names.append(name)
+	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
+# Compare Algorithms
+pyplot.boxplot(results, labels=names)
+pyplot.title('Algorithm Comparison')
+pyplot.show()
+</code></pre><h6 id="355-dự-đoán-kết-quả">3.5.5. Dự đoán kết quả</h6>
+<p>Bây giờ chúng ta chọn một model tốt nhất để dự đoán. Thì theo như kết quả ở trên thì chúng ta sẽ chọn SVM là model cuối cùng để dự đoán.<br />
+Chúng ta sẽ dự đoán dựa trên tập validation set mà chúng ta đã tách ở mục 3.5.1.<br />
+Đây là dữ liệu không hề liên quan tới model trong quá trình training. Mục đích của việc dự đoán trên tập dữ liệu này để đánh giá xem model chúng ta chọn có thực sự dự đoán tốt hay không, để từ đó biết được nó có bị <strong>overfitting</strong> hay không.<br />
+Đầu tiên chúng ta fit model trên toàn bộ tập train và dự đoán trên toàn bộ tập validation.</p>
+<pre><code># Make predictions on validation dataset
+model = SVC(gamma='auto')
+model.fit(X_train, Y_train)
+predictions = model.predict(X_validation)
+# Evaluate predictions
+print(accuracy_score(Y_validation, predictions))
+</code></pre><p>Kết quả của chúng ta là:</p>
+<blockquote>
+<p>0.9666666666666667<br />
+[[11  0  0]<br />
+[ 0 12  1]<br />
+[ 0  0  6]]</p>
+</blockquote>
+<p>Chúng ta có thể sử dụng precision, recall&hellip; để show kwwts quả</p>
+<pre><code>print(confusion_matrix(Y_validation, predictions))
+print(classification_report(Y_validation, predictions))
+</code></pre><blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>precision</th>
+<th>recall</th>
+<th>f1-score</th>
+<th>support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iris-setosa</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Iris-versicolor</td>
+<td>1.00</td>
+<td>0.92</td>
+<td>0.96</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Iris-virginica</td>
+<td>0.86</td>
+<td>1.00</td>
+<td>0.92</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>accuracy</th>
+<th></th>
+<th>0.97</th>
+<th>30</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>macro avg</td>
+<td>0.95      0.97</td>
+<td>0.96</td>
+<td>30</td>
+</tr>
+<tr>
+<td>weighted avg</td>
+<td>0.97      0.97</td>
+<td>0.97</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>Vậy là chúng ta đã cơ bản hoàn thành bài toán đầu tiên của Machine Learning.<br />
+<strong>Một vài lưu ý của bài viết</strong></p>
+<ul>
+<li>Baì viết này nhằm mục đích giúp các bạn hiểu được luồng hoạt động hay nói cách khác là cách để làm một bài toán machine learning nên mình sẽ không đi chi tiết vào từng dòng code.</li>
+<li>Mặc định ban đầu là các bạn đã có kiến thức cơ bản mà bài viết đã yêu cầu. nên mình cũng không cần phải nói rõ từng thư viện, từng khái niệm nữa.</li>
+<li>Đây là bài viết đầu tiên trong loạt bài ML cơ bản nên có rất nhiều hạn chế và thiếu sót( mình sẽ cải thiện dần trong những bài viết sau). Nhưng hy vọng qua bài viết này các bạn đã biết cách xây dựng một bài toán machine learning.</li>
+</ul>
+<p>Cảm ơn tất cả các bạn đã đọc bài viết. Bài viết tiếp theo sẽ là cách xử lý dữ liệu, cleaning data như thế nào. Mong các bạn đón đọc!!!</p>
 
     </article>
     

@@ -30,7 +30,8 @@
         <atom:modified>Fri, 10 Apr 2020 00:00:00 +0000</atom:modified>
         <guid>https://tranvanly107.github.io/posts/first-machine-learning/</guid>
         <description>1. Kiến thức cần có Trước khi bắt đầu với bài viết này, vui lòng chắc chắn rằng bạn có kiến thức về Python. Các thư viện cần thiết như:
- Pandas Numpy Sklearn  2. Các bước để làm một bài toán ML Hầu hết toàn bộ bài toán về Machine Learning đều trải qua các bước cơ bản sau: ( Mình sẽ không nói sâu về từng bước, các bạn cần tìm hiểu thêm nhé)</description>
+ Pandas Numpy Sklearn
+Các bạn có thể dùng google colab hoặc jupyter để code nhé.  2. Các bước để làm một bài toán ML Hầu hết toàn bộ bài toán về Machine Learning đều trải qua các bước cơ bản sau: ( Mình sẽ không nói sâu về từng bước, các bạn cần tìm hiểu thêm nhé)</description>
         
         <dc:creator>lytran</dc:creator>
         <media:content url="https://tranvanly107.github.io/images/ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
