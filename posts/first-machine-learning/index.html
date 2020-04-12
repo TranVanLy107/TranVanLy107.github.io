@@ -1291,7 +1291,31 @@
 
     
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
 
 
@@ -2407,11 +2431,11 @@ print(classification_report(Y_validation, predictions))
 </tr>
 </tbody>
 </table>
-<p>Vậy là chúng ta đã cơ bản hoàn thành bài toán đầu tiên của Machine Learning.<br />
-<strong>Một vài lưu ý của bài viết</strong></p>
+<p>Vậy là chúng ta đã cơ bản hoàn thành bài toán đầu tiên của Machine Learning.</p>
+<h3 id="4-tổng-kết">4. Tổng Kết</h3>
 <ul>
 <li>Baì viết này nhằm mục đích giúp các bạn hiểu được luồng hoạt động hay nói cách khác là cách để làm một bài toán machine learning nên mình sẽ không đi chi tiết vào từng dòng code.</li>
-<li>Mặc định ban đầu là các bạn đã có kiến thức cơ bản mà bài viết đã yêu cầu. nên mình cũng không cần phải nói rõ từng thư viện, từng khái niệm nữa.</li>
+<li>Mặc định ban đầu là các bạn đã có kiến thức cơ bản mà bài viết đã yêu cầu nên mình cũng không nói rõ từng thư viện, từng khái niệm nữa.</li>
 <li>Đây là bài viết đầu tiên trong loạt bài ML cơ bản nên có rất nhiều hạn chế và thiếu sót, rất mong được sự góp ý của các bạn( mình sẽ cải thiện dần trong những bài viết sau). Nhưng hy vọng qua bài viết này các bạn đã biết cách xây dựng một bài toán machine learning.</li>
 </ul>
 <p>Cảm ơn tất cả các bạn đã đọc bài viết. Bài viết tiếp theo sẽ là cách xử lý dữ liệu, cleaning data như thế nào. Mong các bạn đón đọc!!!</p>
@@ -3022,6 +3046,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <li></li>
           </ul>
         </li>
+        <li><a href="#4-tổng-kết">4. Tổng Kết</a></li>
       </ul>
     </li>
   </ul>
