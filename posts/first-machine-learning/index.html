@@ -2168,7 +2168,8 @@ ok, bây giờ sẽ vào chi tiết nhé:</li>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_validation</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">,</span> <span class="n">Y_validation</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.20</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Bây giờ chúng ta đã chuẩn bị được dữ liệu đầy đủ cho việc training và testing rồi.</p>
+</div><p>Chúng ta lấy bốn cột đầu tiên (X) là các feature hay còn gọi là đặc tính của dữ liệu(attributes), cột cuối cùng là (y) nhãn của dữ liệu.<br />
+Bây giờ chúng ta đã chuẩn bị được dữ liệu đầy đủ cho việc training và testing rồi.</p>
 <h6 id="352-cross-validation">3.5.2. Cross validation</h6>
 <p>Chúng ta sẽ tạo ra 10 fold cross validation để estimate model.<br />
 Cụ thể là chúng ta chia dữ liệu train ra làm 10 phần bằng nhau, lấy 9 phần cho việc train và phần còn lại là để test trong lúc train.</p>
