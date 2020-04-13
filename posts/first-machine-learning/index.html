@@ -2145,7 +2145,7 @@ pyplot.show()
 Các bước thực hiện như sau:</p>
 <ol>
 <li>Tách một phần dữ liệu để đánh giá model ( validation dataset)</li>
-<li>Thiết lập validation dataset để sử dụng 10-fold cross validation</li>
+<li>Thiết lập test harness để sử dụng 10-fold cross validation</li>
 <li>Chạy và dự đoán kết quả trên từng model</li>
 <li>Chọn ra model có kết quả tốt nhất để sử dụng cuối cùng<br />
 ok, bây giờ sẽ vào chi tiết nhé:</li>
@@ -2172,7 +2172,7 @@ ok, bây giờ sẽ vào chi tiết nhé:</li>
 <h6 id="352-cross-validation">3.5.2. Cross validation</h6>
 <p>Chúng ta sẽ tạo ra 10 fold cross validation để estimate model.<br />
 Cụ thể là chúng ta chia dữ liệu train ra làm 10 phần bằng nhau, lấy 9 phần cho việc train và phần còn lại là để test trong lúc train.</p>
-<h6 id="353-chạy-model">3.5.3. Chạy model</h6>
+<h6 id="353-build-models">3.5.3. Build models</h6>
 <p>Chúng ta bây giờ sẽ không thể biết được model nào sẽ tốt nhất.<br />
 Sau đây là những model mình dùng để chạy và dự đoán độ chính xác</p>
 <ol>
