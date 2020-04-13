@@ -1587,7 +1587,7 @@ if (!doNotTrack) {
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Apr 10, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;12&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;13&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">✍️&nbsp;lytran</span>
   
@@ -1669,10 +1669,12 @@ Sau khi các bạn cài xong thì các bạn test xem đã thành công hay chư
 </span><span class="lnt">16
 </span><span class="lnt">17
 </span><span class="lnt">18
+</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Python version</span>
-<span class="kn">import</span> <span class="nn">sys</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1"># Python version</span>
 <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Python: {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">))</span>
 <span class="c1"># scipy</span>
 <span class="kn">import</span> <span class="nn">scipy</span>
@@ -1703,7 +1705,7 @@ sklearn: 0.22.2</p>
 </blockquote>
 <p><em>Còn nếu các bạn cài đặt bị lỗi thì có thể fix lỗi <a href="http://https://stackoverflow.com/questions/tagged/python">tại đây</a>.</em></p>
 <h5 id="32-tải-dữ-liệu">3.2. Tải dữ liệu</h5>
-<p>Trng bài viết này chúng ta sẽ sử dụng dữ liệu có sẵn trên google.<br />
+<p>Trong bài viết này chúng ta sẽ sử dụng dữ liệu có sẵn trên google.<br />
 Các bạn có thể tìm hiểu dữ liệu <a href="http://https://en.wikipedia.org/wiki/Iris_flower_data_set">tại đây</a>.</p>
 <h6 id="321-import-các-thư-viện-cần-thiết">3.2.1. import các thư viện cần thiết</h6>
 <p>Tiếp theo chúng ta sẽ import các thư viện dưới đây để sự dụng trong bài toán.</p>
@@ -1761,7 +1763,8 @@ Các bạn có thể tìm hiểu dữ liệu <a href="http://https://en.wikipedi
 <span class="n">dataset</span> <span class="o">=</span> <span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Nếu các bạn gặp lỗi khi load thì bạn có thể download <a href="http://https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv">iris.csv</a>.</p>
+</div><p>Chúng ta sử dụng hàm <strong>read_csv</strong> và được trả về một dataframe, chúng ta sẽ xem kết quả sau.<br />
+Nếu các bạn gặp lỗi khi load thì bạn có thể download <a href="http://https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv">iris.csv</a>.</p>
 <h5 id="33-khai-phá-dữ-liệu">3.3. Khai phá dữ liệu</h5>
 <p>Bây giờ chúng ta xem dữ liệu nó có gì nhé.<br />
 <em>Chúng ta sẽ thực hiện một số cách tiếp cận dưới đây:</em></p>
@@ -1773,14 +1776,14 @@ Các bạn có thể tìm hiểu dữ liệu <a href="http://https://en.wikipedi
 <em>Bây giờ chúng tiến hành đi thực hiện  từng mục một nhé:</em></li>
 </ol>
 <h6 id="331-chiều-của-dữ-liệu">3.3.1. Chiều của dữ liệu</h6>
-<p>Chiều của dữ liệu cho chúng ta biết là có bao nhiều hàng và bao nhiêu cột của toàn bộ dữ liệu.</p>
+<p>Chiều của dữ liệu cho chúng ta biết là có bao nhiêu hàng và bao nhiêu cột của toàn bộ dữ liệu. Để xem chiều dữ liệu chúng ta sử dụng hàm shape trong pandas.</p>
 <pre><code>print(dataset.shape)
-</code></pre><p>Chúng ta sẽ thấy là 150 hàng và 5 cột. Có nghĩa là có 50 điểm dữ liệu và 4 features, 1 class chín là nhãn mà model cần dự đoán.<br />
-<strong>(150,5)</strong></p>
+</code></pre><p>Output: <strong>(150,5)</strong><br />
+Có nghĩa là dữ liệu của chúng ta có 150 hàng và 5 cột. Nói cách khác là có 150 điểm dữ liệu và 4 features, 1 class chính là nhãn mà model cần dự đoán.</p>
 <h6 id="332-tổng-quan-dữ-liệu">3.3.2. Tổng quan dữ liệu</h6>
-<p>Bây giờ chúng ta sẽ xem rõ hơn về dữ liệu nhé. Để xem chúng ta chỉ cần dùng head như sau:</p>
+<p>Bây giờ chúng ta sẽ xem rõ hơn về dữ liệu nhé. Để xem chúng ta chỉ cần dùng hàm head trong pandas như sau:</p>
 <pre><code>print(dataset.head(20))
-</code></pre><p>Chúng sẽ hiển thị 20 hàng đầu tiên của toàn bộ dữ liệu.</p>
+</code></pre><p>Hàm head giúp chúng ta hiển thị n bản ghi đầu tiên, ở đây chúng sẽ hiển thị 20 hàng đầu tiên của toàn bộ dữ liệu.</p>
 <table>
 <thead>
 <tr>
@@ -1955,7 +1958,7 @@ Các bạn có thể tìm hiểu dữ liệu <a href="http://https://en.wikipedi
 </tr>
 </tbody>
 </table>
-<p>Các feature của dữ liệu bao gồm: chiều dài đài hoa (sepal-length), chiều rộng đài hoa(sepal-width ), chiều dài cánh hoa (petal-length), chiều rộng cánh hoa(petal-width ).Và có 3 classes mà chúng ta cần dự đoán đó là: Iris-setosa, Iris-versicolor, Iris-virginica. Tất nhiên mỗi loài hoa sẽ có các feature khác nhau để mô hình nó phân biệt và đưa ra dự đoán chính xác.</p>
+<p>Đây là hình dạng của một dataframe. Các features của dữ liệu bao gồm: chiều dài đài hoa (sepal-length), chiều rộng đài hoa(sepal-width ), chiều dài cánh hoa (petal-length), chiều rộng cánh hoa(petal-width ).Và có 3 classes mà chúng ta cần dự đoán đó là: Iris-setosa, Iris-versicolor, Iris-virginica. Tất nhiên mỗi loài hoa sẽ có các features khác nhau để mô hình nó phân biệt và đưa ra dự đoán chính xác.</p>
 <h6 id="333-thống-kê-các-thuộc-tính-của-dữ-liệu">3.3.3. Thống kê các thuộc tính của dữ liệu</h6>
 <p>Bây giờ chúng ta sẽ xem chi tiết hơn về các features: Bao gồm count(số lượng), mean(chiều dài, chiều rộng trung bình), min và max. <br />
 <strong>Cụ thể như sau</strong>:</p>
@@ -2093,7 +2096,7 @@ pyplot.show()
 </code></pre><p>Kết quả hiển thị như sau:</p>
 <p><img src="/images/3.4.1.2.png" alt="" /></p>
 <h6 id="342-multivariate-plots">3.4.2. Multivariate Plots</h6>
-<p>Bây giờ chúng ta có thể thấy sự liên quan giữa các feature. Chúng ta sử dụng scatterplots trên tất cả dữ liệu để thấy được quan hệ của các feture trên toàn bộ dữ liệu:</p>
+<p>Bây giờ chúng ta có thể thấy sự liên quan giữa các features. Chúng ta sử dụng scatter_matrix trong pandas để thấy được quan hệ của các features trên toàn bộ dữ liệu:</p>
 <pre><code># scatter plot matrix
 scatter_matrix(dataset)
 pyplot.show()
@@ -2168,14 +2171,14 @@ ok, bây giờ sẽ vào chi tiết nhé:</li>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_validation</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">,</span> <span class="n">Y_validation</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.20</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Chúng ta lấy bốn cột đầu tiên (X) là các feature hay còn gọi là đặc tính của dữ liệu(attributes), cột cuối cùng là (y) nhãn của dữ liệu.<br />
+</div><p>Chúng ta lấy bốn cột đầu tiên (X) là các features hay còn gọi là đặc tính của dữ liệu(attributes), cột cuối cùng là (y) nhãn của dữ liệu.<br />
 Bây giờ chúng ta đã chuẩn bị được dữ liệu đầy đủ cho việc training và testing rồi.</p>
 <h6 id="352-cross-validation">3.5.2. Cross validation</h6>
 <p>Chúng ta sẽ tạo ra 10 fold cross validation để estimate model.<br />
-Cụ thể là chúng ta chia dữ liệu train ra làm 10 phần bằng nhau, lấy 9 phần cho việc train và phần còn lại là để test trong lúc train.</p>
+Cụ thể là chúng ta chia dữ liệu train ra làm 10 phần bằng nhau, lấy 9 phần cho việc train và phần còn lại là để test trong lúc train. Để hiểu rõ hơn về cross validation thì các bạn có thể tìm hiểu <a href="http:https://scikit-learn.org/stable/modules/cross_validation.html">tại đây</a> nhé.</p>
 <h6 id="353-build-models">3.5.3. Build models</h6>
 <p>Chúng ta bây giờ sẽ không thể biết được model nào sẽ tốt nhất.<br />
-Sau đây là những model mình dùng để chạy và dự đoán độ chính xác</p>
+Sau đây là những model mình dùng để chạy và dự đoán độ chính xác.</p>
 <ol>
 <li>Logistic Regression (LR)</li>
 <li>Linear Discriminant Analysis (LDA)</li>
@@ -2370,7 +2373,8 @@ Chúng ta sẽ dự đoán dựa trên tập validation set mà chúng ta đã t
 [ 0 12  1]<br />
 [ 0  0  6]]</p>
 </blockquote>
-<p>Chúng ta có thể sử dụng precision, recall&hellip; để show kwwts quả</p>
+<p>Hoặc chúng ta có thể lên google download ảnh của một loài hoa thuộc một trong 3 loại hoa ở trên và cho vào model để xem model dự đoán xem là loài hoa gì nhé.<br />
+Chúng ta có thể sử dụng precision, recall&hellip; để show kết quả.</p>
 <pre><code>print(confusion_matrix(Y_validation, predictions))
 print(classification_report(Y_validation, predictions))
 </code></pre><p>Và kết quả:</p>
@@ -2435,8 +2439,8 @@ print(classification_report(Y_validation, predictions))
 <p>Vậy là chúng ta đã cơ bản hoàn thành bài toán đầu tiên của Machine Learning.</p>
 <h3 id="4-tổng-kết">4. Tổng Kết</h3>
 <ul>
-<li>Baì viết này nhằm mục đích giúp các bạn hiểu được luồng hoạt động hay nói cách khác là cách để làm một bài toán machine learning nên mình sẽ không đi chi tiết vào từng dòng code.</li>
-<li>Mặc định ban đầu là các bạn đã có kiến thức cơ bản mà bài viết đã yêu cầu nên mình cũng không nói rõ từng thư viện, từng khái niệm nữa.</li>
+<li>Bài viết này nhằm mục đích giúp các bạn hiểu được luồng hoạt động hay nói cách khác là cách để làm một bài toán machine learning nên mình sẽ không đi chi tiết vào từng dòng code.</li>
+<li>Mặc định ban đầu là các bạn đã có kiến thức cơ bản mà bài viết đã yêu cầu nên mình cũng không nói rõ từng thư viện, từng khái niệm trong bài viết nữa.</li>
 <li>Đây là bài viết đầu tiên trong loạt bài ML cơ bản nên có rất nhiều hạn chế và thiếu sót, rất mong được sự góp ý của các bạn( mình sẽ cải thiện dần trong những bài viết sau). Nhưng hy vọng qua bài viết này các bạn đã biết cách xây dựng một bài toán machine learning.</li>
 </ul>
 <p>Cảm ơn tất cả các bạn đã đọc bài viết. Bài viết tiếp theo sẽ là cách xử lý dữ liệu, cleaning data như thế nào. Mong các bạn đón đọc!!!</p>
