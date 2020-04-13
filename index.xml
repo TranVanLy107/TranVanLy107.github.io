@@ -46,9 +46,9 @@
       <item>
         <title>Giải bài toán Machine Learning đầu tiên </title>
         <link>https://tranvanly107.github.io/posts/first-machine-learning/</link>
-        <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
         <author>tranvanly107@gmail.com (Tran Van Ly)</author>
-        <atom:modified>Fri, 10 Apr 2020 00:00:00 +0000</atom:modified>
+        <atom:modified>Mon, 13 Apr 2020 00:00:00 +0000</atom:modified>
         <guid>https://tranvanly107.github.io/posts/first-machine-learning/</guid>
         <description>1. Kiến thức cần có Trước khi bắt đầu với bài viết này, vui lòng chắc chắn rằng bạn có kiến thức về Python. Các thư viện cần thiết như:
  Pandas Numpy Sklearn
