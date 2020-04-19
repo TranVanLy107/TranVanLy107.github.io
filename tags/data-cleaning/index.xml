@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Posts on Machine Learning Blog</title>
-    <link>https://tranvanly107.github.io/posts/</link>
-    <description>Recent content in Posts on Machine Learning Blog</description>
+    <title>data cleaning on Machine Learning Blog</title>
+    <link>https://tranvanly107.github.io/tags/data-cleaning/</link>
+    <description>Recent content in data cleaning on Machine Learning Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <managingEditor>tranvanly107@gmail.com (Tran Van Ly)</managingEditor>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://tranvanly107.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://tranvanly107.github.io/tags/data-cleaning/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -46,46 +46,6 @@
         
         
           
-            
-          
-        
-        
-          
-            
-          
-        
-      </item>
-      
-      <item>
-        <title>Giải bài toán Machine Learning đầu tiên </title>
-        <link>https://tranvanly107.github.io/posts/first-machine-learning/</link>
-        <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-        <author>tranvanly107@gmail.com (Tran Van Ly)</author>
-        <atom:modified>Mon, 13 Apr 2020 00:00:00 +0000</atom:modified>
-        <guid>https://tranvanly107.github.io/posts/first-machine-learning/</guid>
-        <description>1. Kiến thức cần có Trước khi bắt đầu với bài viết này, vui lòng chắc chắn rằng bạn có kiến thức về Python. Các thư viện cần thiết như:
- Pandas Numpy Sklearn
-Các bạn có thể dùng google colab hoặc jupyter để code nhé.  2. Các bước để làm một bài toán ML Hầu hết toàn bộ bài toán về Machine Learning đều trải qua các bước cơ bản sau: ( Mình sẽ không nói sâu về từng bước, các bạn cần tìm hiểu thêm nhé)</description>
-        
-        <dc:creator>lytran</dc:creator>
-        <media:content url="https://tranvanly107.github.io/images/ai.png" medium="image"><media:title type="html">featured image</media:title></media:content>
-        
-        
-        
-          
-            
-              <category>tutorial</category>
-            
-          
-            
-              <category>machine learning</category>
-            
-          
-        
-        
-          
-            
-              <category>resources</category>
             
           
         
