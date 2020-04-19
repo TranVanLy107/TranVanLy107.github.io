@@ -1607,16 +1607,16 @@ if (!doNotTrack) {
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <p>Để tiếp tục cho chuỗi các bài viết về machine learning thì hôm nay chúng ta sẽ tiếp tục tìm hiểu một khái niệm rất quan trọng trong bài toán machine learning đó là làm sạch sữ liệu(data cleaning).<br />
+      <p>Để tiếp tục cho chuỗi các bài viết về machine learning thì hôm nay chúng ta sẽ tiếp tục tìm hiểu một khái niệm rất quan trọng trong bài toán machine learning đó là làm sạch dữ liệu(data cleaning).<br />
 Để hiểu được tổng quan về data cleaning thì đầu tiên chúng ta sẽ tìm hiểu về khái niệm và những lợi ích của việc làm sạch dữ liệu nhé.</p>
 <h3 id="1-data-cleaning">1. Data cleaning</h3>
-<p>Data cleaning thuộc một trong các giai đoạn trong Data preparation ( bài tiếp theo chúng ta sẽ tìm hiểu về khái niệm này) còn gọi là làm sạch dữ liệu, đây là bước đầu tiên và cũng là bước quan trọng nhất mà mỗi cá nhân đều phải thực hiện sau khi thu thập được dữ liệu để có một kết quả dự đoán chính xác. Mục đích của bước này là loại bỏ các dữ liệu &ldquo;nhiễu&rdquo;, dữ liệu không cần thiết, không đầy đủ thông tin - đây được xem là những vấn đề luôn hiện hữu trong mọi bộ dữ liệu.<br />
-Công việc cụ thể trong Data cleaning là xử lý các &ldquo;missing value&rdquo;, các nhiễu và dũ liệu không nhất quán, không cần thiết sẽ được loại bỏ.<br />
-Kết quả của bước Data cleaning là một bộ dữ liệu được làm sạch, không còn tác nhân gây ảnh hưởng đến các bước sau trong việc chuẩn bị dữ liệu ( Data preparation).</p>
+<p>Data cleaning thuộc một trong các giai đoạn của Data preparation ( bài tiếp theo chúng ta sẽ tìm hiểu về khái niệm này) còn gọi là làm sạch dữ liệu, đây là bước đầu tiên và cũng là bước quan trọng nhất mà mỗi cá nhân đều phải thực hiện sau khi thu thập được dữ liệu để có một kết quả dự đoán chính xác. Mục đích của bước này là loại bỏ các dữ liệu &ldquo;nhiễu&rdquo;, dữ liệu không cần thiết, không đầy đủ thông tin - đây được xem là những vấn đề luôn hiện hữu trong mọi bộ dữ liệu.<br />
+Công việc cụ thể trong Data cleaning là xử lý các &ldquo;missing value&rdquo;, các nhiễu và dữ liệu không nhất quán, không cần thiết sẽ được loại bỏ.<br />
+Kết quả của bước Data cleaning là một bộ dữ liệu đã được làm sạch, không còn tác nhân gây ảnh hưởng đến các bước sau trong việc chuẩn bị dữ liệu ( Data preparation).</p>
 <h3 id="2-thực-hiện">2. Thực hiện</h3>
 <h5 id="21-tải-dữ-liệu">2.1. Tải dữ liệu</h5>
-<p>Hôm nay mình sẽ sử dụng một bộ dữ liệu thật là dự đoán giá nhà tại California các bạn cỏ thể tải dữ liệu tại <a href="https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.csv">đây</a><br />
-Chúng ta vẫn sứ dụng pandas để load dữ liệu:</p>
+<p>Hôm nay mình sẽ sử dụng một bộ dữ liệu thật là dự đoán giá nhà tại tiểu bang California Hoa Kỳ các bạn có thể tải dữ liệu tại <a href="https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.csv">đây</a><br />
+Chúng ta vẫn sử dụng pandas để load dữ liệu:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1744,7 +1744,7 @@ Nhưng để phục vụ cho các bước tiếp theo thì chúng ta cần phả
 </div><blockquote>
 <p>(20640, 10)</p>
 </blockquote>
-<p>Dữ liệu chúng ta bao gồm 10 attributes(longitude, latitude, housing_median_age, total_rooms, total_bed rooms, population, households, median_income, median_house_value, and ocean_proximity) và 20640 instances .</p>
+<p>Dữ liệu chúng ta bao gồm 10 cột (longitude, latitude, housing_median_age, total_rooms, total_bed rooms, population, households, median_income, median_house_value, and ocean_proximity) và 20640 hàng ( lưu ý: mỗi hàng ở đây có nghĩa là mỗi instances, và mỗi cột là một attribute) .</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1755,7 +1755,7 @@ Nhưng để phục vụ cho các bước tiếp theo thì chúng ta cần phả
 </div>
 </div><p><img src="/images/info.jpg" alt="" /></p>
 <p>Hàm info rất hứu ích trong việc mô tả dữ liệu, nó giúp chúng ta biết được là số hàng, kiểu dữ liệu của mỗi attribute và số lượng non-null values. Bạn có thể thấy kết quả ở phía trên. Chú ý rằng &ldquo;total_bedrooms&rdquo; attribute  chỉ có 20433 non-null values, có nghĩa là có 207 hàng không có giá trị và đây gọi là missing value.<br />
-Một chú ý khác là hầu hết các giá trị của các attributes đều là dạng số, chỉ có &ldquo;ocean_proximity&rdquo; là dạng object, nó là một kiểu của python object nhưng khi chúng ta loaded dữ liệu ở dạng CSV thì nó sẽ phải là ở dạng text. Dữ liệu mà chúng ta đang thấy chỉ là 5 hàng đầu tiên, có thể bạn thấy nó chỉ toàn là NEAR BAY nó có nhiều categorical khác nhau:</p>
+Một chú ý khác là hầu hết các giá trị của các attributes đều là dạng số, chỉ có &ldquo;ocean_proximity&rdquo; là dạng object, nó là một kiểu của python object nhưng khi chúng ta loaded dữ liệu ở dạng CSV thì nó sẽ phải là ở dạng text. Dữ liệu mà chúng ta đang thấy chỉ là 5 hàng đầu tiên, có thể bạn thấy nó chỉ toàn là NEAR BAY nhưng thực tế có nhiều categorical khác nhau:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1773,7 +1773,7 @@ ISLAND :          5<br />
 Name: ocean_proximity, dtype: int64</p>
 </blockquote>
 <p>Như vậy chúng ta thấy có 9136 hàng là OCEAN, 6551 là INLAND&hellip; Chúng ta bắt đầu vào phần chính của bài viết.<br />
-Nhìn vào dữ liệu chúng ta biết sẽ có một cột là label trong tập dữ liệu được gọi là nhãn cụ thể ở đây là &ldquo;median_house_value &quot; hay còn goi là giá nhà. Chính vì vậy mình sẽ tách cột này riêng ra để dễ dàng trong việc xử lý, còn bài sau chúng ta sẽ xử lý nó trong bài viết chuẩn bị dữ liệu.</p>
+Nhìn vào dữ liệu chúng ta biết sẽ có một cột là label trong tập dữ liệu được gọi là nhãn, cụ thể ở đây là &ldquo;median_house_value &quot; hay còn goi là giá nhà. Chính vì vậy mình sẽ tách cột này riêng ra để dễ dàng trong việc xử lý, còn bài sau chúng ta sẽ xử lý nó trong bài viết về chuẩn bị dữ liệu.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1863,7 +1863,7 @@ Nhìn vào dữ liệu chúng ta biết sẽ có một cột là label trong t�
 </tbody>
 </table>
 <p>Chúng ta đã loại bỏ cột giá nhà đi, bây giờ chỉ còn 9 cột.<br />
-Chúng ta lưu ý một điều rằng hầu hết các thuật toán Machine Learning không thể làm việc được với những features mà thiếu dữ liệu ( missing featues) chính vì vậy Data cleaning là bước rất quan trọng mà chúng ta sẽ không thể bỏ qua nếu chúng ta không muốn có một kết quả dự đoán tồi.<br />
+Chúng ta lưu ý một điều rằng hầu hết các thuật toán Machine Learning không thể làm việc được với những features mà thiếu dữ liệu ( missing features) chính vì vậy Data cleaning là bước rất quan trọng mà chúng ta sẽ không thể bỏ qua nếu chúng ta không muốn có một kết quả dự đoán tồi.<br />
 Như mình đã đề cập trước đó là &ldquo;total_bedrooms&rdquo; attribute có một số dữ liệu bị thiếu. Để được rõ hơn chúng ta sẽ show kết quả sau đây:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1953,7 +1953,7 @@ Như mình đã đề cập trước đó là &ldquo;total_bedrooms&rdquo; attri
 </tr>
 </tbody>
 </table>
-<p>Như chúng ta thấy ơ trên, cột nào có NaN có nghĩa là đang không có giá trị nào, một là đang để trống hai là mặc định là NaN,  và công việc của chúng ta là sẽ đi giải quyết chúng.<br />
+<p>Như chúng ta thấy ở trên, cột nào có NaN có nghĩa là đang không có giá trị nào, một là đang để trống hai là mặc định là NaN và công việc của chúng ta là sẽ đi giải quyết chúng.<br />
 Để xử lý các missing value thì chúng ta có 3 lựa chọn:</p>
 <ul>
 <li>Lựa chọn 1: loại bỏ những hàng nào mà giá trị đó là NaN</li>
@@ -1974,8 +1974,7 @@ Như mình đã đề cập trước đó là &ldquo;total_bedrooms&rdquo; attri
 <span class="n">housing</span><span class="p">[</span><span class="s2">&#34;total_bedrooms&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">median</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Nếu chúng ta chọn lựa chọn 3 thì cần phải tính giá trị median trên tập training set và lấy giá trị đó để thay vào giá trị NaN trong training set, nhưng bạn quên lưu chúng lại để sử dụng cho tập test khi bạn muốn đánh giá model sử dụng tập test set.<br />
-ok, chúng ta bắt đầu xem kết quả của từng lựa chọn nhé:<br />
+</div><p>Nếu chúng ta chọn lựa chọn 3 thì cần phải tính giá trị median trên tập training set và lấy giá trị đó để thay vào các giá trị NaN trong training set, nhưng bạn đừng quên lưu chúng lại để sử dụng cho tập test khi bạn muốn đánh giá model sử dụng tập test set. Ok, chúng ta bắt đầu xem kết quả của từng lựa chọn nhé:<br />
 Trong lựa chọn một chúng ta sử dụng hàm <strong>dropna</strong> tức là xóa những hàng nào mà có ít nhất một giá trị NaN.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2001,7 +2000,7 @@ Trong lựa chọn một chúng ta sử dụng hàm <strong>dropna</strong> tứ
 </tr>
 </thead>
 </table>
-<p>Như vậy là chúng ta đã xóa tất cả các hàng có giá trị NaN. Các bạn lưu ý rằng là đây là chúng ta đang xử lý trên những hàng có giá trị NaN, chứ nhiều bạn nhìn vào bảng trên có thể hiểu nhầm là toàn bộ data đã bị xóa sạch nhưng không phải, mình đang xét những hàng có giá trị NaN và dữ liệu của chúng ta chỉ mất toàn bộ giá trị NaN mà thôi(cụ thể ở đây có 207 rows có giá trị NaN), còn các hàng còn lại vẫn giữ nguyên và tương tự như các lựa chọn khác.</p>
+<p>Như vậy là chúng ta đã xóa tất cả các hàng có giá trị NaN. Các bạn lưu ý rằng là đây là chúng ta đang xử lý trên những hàng có giá trị NaN, chứ nhiều bạn nhìn vào bảng trên có thể hiểu nhầm là toàn bộ data đã bị xóa sạch nhưng không phải, mình đang xét những hàng có giá trị NaN và dữ liệu của chúng ta chỉ mất toàn bộ hàng chứa giá trị NaN mà thôi(cụ thể ở đây có 207 hàng) còn các hàng còn lại vẫn giữ nguyên và tương tự như các lựa chọn khác.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -2090,7 +2089,7 @@ Trong lựa chọn một chúng ta sử dụng hàm <strong>dropna</strong> tứ
 </tbody>
 </table>
 <p>Ok, như vậy cột &ldquo;total_bedrooms&rdquo; của chúng ta đã bị xóa.<br />
-Lựa chọn 3 thì như mình đã nói ở trên và bây giờ chúng ta sẽ xem kết quả nó như thế nào.</p>
+Lựa chọn 3 thì như mình đã nói ở trên và bây giờ chúng ta sẽ xem kết quả nó như thế nào nhé.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -2183,9 +2182,9 @@ Lựa chọn 3 thì như mình đã nói ở trên và bây giờ chúng ta sẽ
 </tbody>
 </table>
 <p>Chúng ta thấy giá trị median là 435.0 và đã được thay thế cho giá trị NaN rồi nhé.<br />
-Việc lựa chọn 3 phương án trên là tùy vào bài toán, và lượng giá trị NaN. Nhưng hầu hết người ta khuyến khích sử dụng lựa chọn 3 nếu trong trường hợp lượng giá trị NaN quá nhỏ so với toàn bộ dứ liệu.<br />
+Việc lựa chọn 3 phương án trên là tùy vào bài toán, và lượng giá trị NaN. Nhưng hầu hết người ta khuyến khích sử dụng lựa chọn 3 nếu trong trường hợp lượng giá trị NaN quá nhỏ so với toàn bộ dữ liệu.<br />
 OK, vậy chúng ta đã xong việc xử lý &ldquo;missing value&rdquo;, thế là tạm ổn 😄. Mới chỉ tạm ổn thôi nhé chứ chưa ổn đâu, còn tiếp tục.<br />
-Như chúng ta thấy hầu hết toàn bộ các attributes đều là giá trị số, nhưng lại có một attribute là text, tới đây có nhiều bạn thắc mắc là nếu là text thì sao tính được median, thật may là ở trên  mình chỉ sử dụng cột total_bedrooms. Mình trả lời cho các bạn là text thì không thể tính được giá trị median nhé, còn nếu các bạn muốn tính giá trị median trên toàn bộ attributes thì các bạn sẽ phải loại bỏ attribute nào mà giá trị của nó thuộc dạng text. Nhưng bây giờ chúng ta sẽ xử lý nó.</p>
+Như chúng ta thấy hầu hết toàn bộ các attributes đều là giá trị số, nhưng lại có một attribute là text, tới đây có nhiều bạn thắc mắc rằng nếu là text thì sao tính được median, thật may là ở trên  mình chỉ sử dụng cột total_bedrooms. Mình trả lời cho các bạn là text thì không thể tính được giá trị median nhé, còn nếu các bạn muốn tính giá trị median trên toàn bộ attributes thì các bạn sẽ phải loại bỏ attribute nào mà giá trị của nó thuộc dạng text. Nhưng bây giờ chúng ta sẽ xử lý nó.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -2226,7 +2225,7 @@ Như chúng ta thấy hầu hết toàn bộ các attributes đều là giá tr�
 </tr>
 </tbody>
 </table>
-<p>Hầu hết các thuật toán machine learning làm việc với số hơn là text chính vì vậy việc của chúng ta là chuyển text thành số thôi.<br />
+<p>Hầu hết các thuật toán machine learning làm việc với số hơn là text chính vì vậy việc của chúng ta bây giờ là chuyển text thành số thôi.<br />
 Trong thư viện Scikit-Learn có hai hàm để làm việc này cho chúng ta đó là LabelEncoder và OrdinalEncoder, bản chất của hai hàm này là chuyển dạng text sang dạng số, ở đây mình dùng OrdinalEncoder.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2357,7 +2356,7 @@ Trong thư viện Scikit-Learn có hai hàm để làm việc này cho chúng ta
 <p>Kết quả chúng ta thấy &ldquo;ocean_proximity&rdquo; attribute đã chuyển từ text ban đầu thành kiểu dữ liệu số (float).<br />
 Như vậy chúng ta đã hoàn thành được mục tiêu của chúng ta trong bài viết này. Kết quả là một bộ dữ liệu mà chúng ta mong muốn.</p>
 <h3 id="3-tổng-kết">3. Tổng kết</h3>
-<p>Kết quả nghiên cứu cho thấy để làm một bài toán Machine Learning thành công thì việc xử lý dữ liệu chiếm khoảng 70% thời gian của chúng ta, để có một kết quả với độ chính xác như monng muốn thì việc làm sạch dữ liệu là bước cực kỳ quan trọng và không thể bỏ qua khi chúng ta làm một ứng dụng machine learning.</p>
+<p>Kết quả nghiên cứu cho thấy để làm một bài toán Machine Learning thành công thì việc xử lý dữ liệu chiếm khoảng 70% thời gian của chúng ta, để có một kết quả với độ chính xác như mong muốn thì việc làm sạch dữ liệu là bước cực kỳ quan trọng và không thể bỏ qua khi chúng ta làm một ứng dụng machine learning.</p>
 <p>Làm sạch dữ liệu là việc đòi hỏi chúng ta phải có kinh nghiệm kết hợp với nhiều kiến thức. Qua bài viết này mình đã hướng dẫn tới các bạn cách thực hiện để chúng ta có một bộ dữ liệu sạch là như thế nào. Hy vọng rằng các bạn sẽ áp dụng hiệu quả trong quá trình xây dựng và huấn luyện các thuật toán machine learning.</p>
 <p><strong>Bài viết tiếp theo mình sẽ hướng dẫn cách để chuẩn bị một bộ dữ liệu hoàn chỉnh để áp dụng vào các thuật toán machine learning một cách hiệu quả nhất. Các bạn đón đọc trong bài viết tiếp theo nhé</strong></p>
 <h3 id="4-tài-liệu-tham-khảo">4. Tài liệu tham khảo</h3>

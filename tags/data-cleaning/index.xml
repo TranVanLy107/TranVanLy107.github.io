@@ -29,9 +29,9 @@
         <author>tranvanly107@gmail.com (Tran Van Ly)</author>
         <atom:modified>Sun, 19 Apr 2020 00:00:00 +0000</atom:modified>
         <guid>https://tranvanly107.github.io/posts/data-clearning/</guid>
-        <description>Để tiếp tục cho chuỗi các bài viết về machine learning thì hôm nay chúng ta sẽ tiếp tục tìm hiểu một khái niệm rất quan trọng trong bài toán machine learning đó là làm sạch sữ liệu(data cleaning).
+        <description>Để tiếp tục cho chuỗi các bài viết về machine learning thì hôm nay chúng ta sẽ tiếp tục tìm hiểu một khái niệm rất quan trọng trong bài toán machine learning đó là làm sạch dữ liệu(data cleaning).
 Để hiểu được tổng quan về data cleaning thì đầu tiên chúng ta sẽ tìm hiểu về khái niệm và những lợi ích của việc làm sạch dữ liệu nhé.
-1. Data cleaning Data cleaning thuộc một trong các giai đoạn trong Data preparation ( bài tiếp theo chúng ta sẽ tìm hiểu về khái niệm này) còn gọi là làm sạch dữ liệu, đây là bước đầu tiên và cũng là bước quan trọng nhất mà mỗi cá nhân đều phải thực hiện sau khi thu thập được dữ liệu để có một kết quả dự đoán chính xác.</description>
+1. Data cleaning Data cleaning thuộc một trong các giai đoạn của Data preparation ( bài tiếp theo chúng ta sẽ tìm hiểu về khái niệm này) còn gọi là làm sạch dữ liệu, đây là bước đầu tiên và cũng là bước quan trọng nhất mà mỗi cá nhân đều phải thực hiện sau khi thu thập được dữ liệu để có một kết quả dự đoán chính xác.</description>
         
         <dc:creator>lytran</dc:creator>
         <media:content url="https://tranvanly107.github.io/images/dataclean.jpeg" medium="image"><media:title type="html">featured image</media:title></media:content>
