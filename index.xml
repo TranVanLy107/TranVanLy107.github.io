@@ -44,6 +44,39 @@
 
       
       <item>
+        <title>Chuẩn bị dữ liệu trong machine learning </title>
+        <link>https://tranvanly107.github.io/posts/data-preparation/</link>
+        <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+        <author>tranvanly107@gmail.com (Tran Van Ly)</author>
+        <atom:modified>Sun, 26 Apr 2020 00:00:00 +0000</atom:modified>
+        <guid>https://tranvanly107.github.io/posts/data-preparation/</guid>
+        <description>Ở bài trước chúng ta đã tìm hiểu một khái niệm đó là Data clearning (làm sạch dữ liệu) , đây là một giai đoạn trong của Data preparation ( chuẩn bị dữ liệu). Vậy Data preparation là gì thì hôm nay chúng ta sẽ tìm hiểu rõ hơn về nó nhé.
+1. Khái niệm Chuẩn bị dữ liệu là làm cho dữ liệu có giá trị, hiệu chỉnh dữ liệu, cấu trúc và mã hoá dữ liệu phù hợp với mô hình machine learning, đầu ra là một bộ dữ liệu hoàn chỉnh đưa vào mô hình machine learning để đưa ra một kết quả dự đoán tốt nhất.</description>
+        
+        <dc:creator>lytran</dc:creator>
+        <media:content url="https://tranvanly107.github.io/images/prepare.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>data preparation</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
         <title>Data Cleaning trong Machine Learning </title>
         <link>https://tranvanly107.github.io/posts/data-clearning/</link>
         <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
