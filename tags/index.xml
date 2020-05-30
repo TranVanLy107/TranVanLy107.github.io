@@ -14,13 +14,31 @@
     <managingEditor>tranvanly107@gmail.com (Tran Van Ly)</managingEditor>
     <webMaster>tranvanly107@gmail.com (Tran Van Ly)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://tranvanly107.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>k-fold introduction</title>
+        <link>https://tranvanly107.github.io/tags/k-fold-introduction/</link>
+        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+        <author>tranvanly107@gmail.com (Tran Van Ly)</author>
+        
+        <guid>https://tranvanly107.github.io/tags/k-fold-introduction/</guid>
+        <description></description>
+        
+        <dc:creator>Tran Van Ly</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>data preparation</title>

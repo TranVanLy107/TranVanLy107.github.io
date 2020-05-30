@@ -44,6 +44,39 @@
 
       
       <item>
+        <title>Tìm hiểu về K-Fold Cross-Validation</title>
+        <link>https://tranvanly107.github.io/posts/kfold-introduction/</link>
+        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+        <author>tranvanly107@gmail.com (Tran Van Ly)</author>
+        <atom:modified>Sun, 31 May 2020 00:00:00 +0000</atom:modified>
+        <guid>https://tranvanly107.github.io/posts/kfold-introduction/</guid>
+        <description>Như chúng ta đã biết để huấn luyện và đánh giá một mô hình machine learning hoàn chỉnh chúng ta cần chia dữ liệu thành 3 phần: training, validation và test. Vậy trước khi tìm hiểu về K-Fold Cross Validation (K-Fold CV) thì chúng ta sẽ tìm hiểu khái niệm của 3 thành phần ở trên.
+ Training set: training set là tập dữ liệu dùng để huấn luyện mô hình, bao gồm dữ liệu đầu vào và nhãn.</description>
+        
+        <dc:creator>lytran</dc:creator>
+        <media:content url="https://tranvanly107.github.io/images/cross.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>k-fold introduction</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
         <title>Chuẩn bị dữ liệu trong Machine Learning </title>
         <link>https://tranvanly107.github.io/posts/data-preparation/</link>
         <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
