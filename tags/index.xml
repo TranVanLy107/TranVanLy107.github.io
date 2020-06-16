@@ -14,13 +14,49 @@
     <managingEditor>tranvanly107@gmail.com (Tran Van Ly)</managingEditor>
     <webMaster>tranvanly107@gmail.com (Tran Van Ly)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://tranvanly107.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>batch size</title>
+        <link>https://tranvanly107.github.io/tags/batch-size/</link>
+        <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+        <author>tranvanly107@gmail.com (Tran Van Ly)</author>
+        
+        <guid>https://tranvanly107.github.io/tags/batch-size/</guid>
+        <description></description>
+        
+        <dc:creator>Tran Van Ly</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>epoch</title>
+        <link>https://tranvanly107.github.io/tags/epoch/</link>
+        <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+        <author>tranvanly107@gmail.com (Tran Van Ly)</author>
+        
+        <guid>https://tranvanly107.github.io/tags/epoch/</guid>
+        <description></description>
+        
+        <dc:creator>Tran Van Ly</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>k-fold introduction</title>

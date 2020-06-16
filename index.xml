@@ -44,6 +44,43 @@
 
       
       <item>
+        <title>Phân biệt Batch và Epoch trong Neural Network</title>
+        <link>https://tranvanly107.github.io/posts/batch-and-epoch/</link>
+        <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+        <author>tranvanly107@gmail.com (Tran Van Ly)</author>
+        <atom:modified>Sat, 06 Jun 2020 00:00:00 +0000</atom:modified>
+        <guid>https://tranvanly107.github.io/posts/batch-and-epoch/</guid>
+        <description>Khi chúng ta làm việc với Machine Learning và Deep Learning thì chúng ta thường xuyên bắt gặp các thuật ngữ Epoch - Batch size và Iterations. Và thường sẽ không hiểu rõ chúng là gì, và dùng để làm gì. Vậy trong bài viết này chúng ta sẽ đi tìm hiểu rõ hơn về 3 khái niệm này nhé.
+Trước khi đi vào chi tiết 3 khái niệm này thì mình sẽ giới thiệu cho các bạn một khái niệm không thể thiếu trong các dự án machine learning đó là Gradient Descent và các thuật toán phổ biến của nó.</description>
+        
+        <dc:creator>lytran</dc:creator>
+        <media:content url="https://tranvanly107.github.io/images/epoch.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>batch size</category>
+            
+          
+            
+              <category>epoch</category>
+            
+          
+        
+        
+          
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+      <item>
         <title>Tìm hiểu về K-Fold Cross-Validation</title>
         <link>https://tranvanly107.github.io/posts/kfold-introduction/</link>
         <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>

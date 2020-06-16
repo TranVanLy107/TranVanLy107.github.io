@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tranvanly107.github.io/tags/k-fold-introduction/</loc>
-    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+    <loc>https://tranvanly107.github.io/tags/batch-size/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tranvanly107.github.io/tags/epoch/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tranvanly107.github.io/posts/batch-and-epoch/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tranvanly107.github.io/posts/</loc>
-    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://tranvanly107.github.io/tags/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tranvanly107.github.io/tags/k-fold-introduction/</loc>
     <lastmod>2020-05-31T00:00:00+00:00</lastmod>
   </url>
   
